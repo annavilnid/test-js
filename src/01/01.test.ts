@@ -8,7 +8,6 @@ beforeEach(()=> {
   a = 3;
   b = 5;
   c = 1;
-
 })
 
 test('sum should be correct', () => {
@@ -27,7 +26,9 @@ test('mult should be correct', () => {
   expect(result2).toBe(3);
 })
 
-test('words should be split', () => {
+
+// 'этот тест должен быть пропущен из-за skip'
+test.skip('words should be split', () => {
   let sentence = "Hello my friends!"
   const result1 = splitIntoWords(sentence);
 

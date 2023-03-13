@@ -3,6 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  let pr = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('yes')
+    }, 10000)
+  })
+
+  console.log(pr)
+
   return (
     <div className="App">
       <header className="App-header">
